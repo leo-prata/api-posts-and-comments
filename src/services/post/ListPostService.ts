@@ -6,6 +6,7 @@ class ListPostService{
             select: {
                 title: true,
                 content: true,
+                id: true,
             }
         });
 
