@@ -5,6 +5,7 @@ import ListPostController from './controllers/post/ListPostController';
 import RemovePostController from './controllers/post/RemovePostController';
 
 import CreateCommentController from './controllers/comment/CreateCommentController';
+import ListCommentsByPostController from './controllers/comment/ListCommentsByPostController';
 
 const router = Router();
 
@@ -15,5 +16,6 @@ router.delete('/posts/:id', RemovePostController.handle);
 
 //COMMENTS ROUTES
 router.post('/comments', CreateCommentController.handle);
+router.get('/comments/:postId', ListCommentsByPostController.handle);
 
 export {router};
