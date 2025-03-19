@@ -1,9 +1,10 @@
 import {Router, Request, Response} from 'express';
 
+import CreatePostController from './controllers/post/CreatePostController';
+
 const router = Router();
 
-router.get('/teste', (req: Request, res: Response) => {
-    res.json({message: 'Hello World!'});
-});
+// POSTS ROUTES
+router.post('/posts', CreatePostController.handle);
 
 export {router};
