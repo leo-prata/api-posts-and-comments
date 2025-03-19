@@ -1,0 +1,20 @@
+{
+  "name": "apipostandcomments",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "dev": "ts-node-dev src/server.ts"
+  },
+  "keywords": [],
+  "author": "Leonardo Prata",
+  "license": "ISC",
+  "description": "API para criacao de posts e comentarios",
+  "devDependencies": {
+    "@types/express": "^5.0.0",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.8.2"
+  },
+  "dependencies": {
+    "express": "^4.21.2"
+  }
+}
